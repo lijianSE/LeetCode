@@ -1,17 +1,15 @@
-__author__ = 'LJ'
+__author__ = 'LiJian'
 class Solution(object):
-
-
-    def solveNQueens(self, n):
+    def totalNQueens(self, n):
         """
         :type n: int
-        :rtype: List[List[str]]
+        :rtype: int
         """
 
         result = []
         self.boardList = self.__initBoard(n)
         self.dfs(n, result, [], [0] * n, [], 0)
-        return result
+        return result.__len__()
 
     def __initBoard(self, n):
         boardList = []
@@ -41,10 +39,3 @@ class Solution(object):
                 mapCol[num] = 0
                 mapRow.pop()
                 item.pop()
-
-
-
-s = Solution()
-
-result = s.solveNQueens(8)
-print result.__len__()
