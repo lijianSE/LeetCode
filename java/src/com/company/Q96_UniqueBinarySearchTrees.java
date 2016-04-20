@@ -8,6 +8,6 @@ public class Q96_UniqueBinarySearchTrees
 {
     public int numTrees(int n)
     {
-
+        return 0;
     }
 }
