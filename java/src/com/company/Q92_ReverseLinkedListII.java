@@ -8,8 +8,10 @@ import java.util.Stack;
  */
 public class Q92_ReverseLinkedListII
 {
-    public ListNode reverseBetween(ListNode head, int m, int n) {
-        if (m == n) return head;
+    public ListNode reverseBetween(ListNode head, int m, int n)
+    {
+        if (m == n)
+            return head;
 
         ListNode preHead = new ListNode(0);
         preHead.next = head;
@@ -17,7 +19,8 @@ public class Q92_ReverseLinkedListII
         // The (m-1) node is the tail of first tail.
         ListNode firstTail = preHead;
         int k = m - 1;
-        while (k-- > 0) {
+        while (k-- > 0)
+        {
             firstTail = firstTail.next;
         }
 
@@ -29,7 +32,8 @@ public class Q92_ReverseLinkedListII
         ListNode tmpNext = null;
         ListNode node = firstTail.next;
         k = n - m + 1;
-        while (k-- > 0) {
+        while (k-- > 0)
+        {
             tmpHead = node;
             node = node.next;
 
