@@ -12,7 +12,6 @@ public class Q130_SurroundedRegions
         m = board.length;
         n = board[0].length;
         boolean[][] reach = new boolean[m][n];
-
     }
 
     private boolean dfs(char[][] board, boolean[][] reach, int p, int q)
