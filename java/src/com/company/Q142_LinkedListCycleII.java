@@ -10,8 +10,21 @@ public class Q142_LinkedListCycleII
     {
         if (head == null || head.next == null)
             return null;
-        ListNode slow = head;
-        ListNode fast = head.next;
-        return null;
+        ListNode slow = head.next;
+        ListNode fast = head.next.next;
+        while (slow != fast)
+        {
+            if (fast == null || fast.next == null)
+                return null;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        fast = head;
+        while (fast != slow)
+        {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
     }
 }
