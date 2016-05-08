@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class Main
 {
@@ -47,9 +49,6 @@ public class Main
 
 
     public static void main(String[] args) {
-        int n = 5, t = 5, m = 2;
-        int[] num = {4,3,4,2,1};
-        System.out.println(solution(n, t, m, num));
 
     }
 }
