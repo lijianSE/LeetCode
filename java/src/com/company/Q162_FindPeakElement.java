@@ -30,6 +30,6 @@ public class Q162_FindPeakElement
         if (l == h)
             return -1;
         int mid = (l + h) / 2;
-
+        return 0;
     }
 }

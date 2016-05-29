@@ -10,11 +10,11 @@ public class Q151_ReverseWordsinaString
 {
     public String reverseWords(String s)
     {
-        StringBuilder sb = new StringBuilder();
-        String[] strs = s.split(" ");
-        for (int i = strs.length - 1; i >= 0; i--)
-            sb.append(strs[i]).append(" ");
-        sb.deleteCharAt(sb.length() - 1);
-        return sb.toString();
+        String[] parts = s.trim().split("\\s+");
+        String out = "";
+        for (int i = parts.length - 1; i > 0; i--) {
+            out += parts[i] + " ";
+        }
+        return out + parts[0];
     }
 }
