@@ -22,3 +22,12 @@ class Solution(object):
                 dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j]
 
         return dp[m - 1][n - 1]
+
+str = 'hello world'
+pattern = 'hello (\w+)'
+import re
+match = re.match(pattern, str)
+print match.group(1)
+
+lll = dict(aa = 'a')
+print lll['aa']
