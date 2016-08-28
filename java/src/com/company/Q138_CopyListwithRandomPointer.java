@@ -28,7 +28,7 @@ public class Q138_CopyListwithRandomPointer
             RandomListNode newNode = new RandomListNode(node.label);
             copyNode.next = newNode;
 
-            if ()
+
 
 
 
